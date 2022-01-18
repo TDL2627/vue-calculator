@@ -9,18 +9,31 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div id="app">
-        <div id="equals">{{ sum }}</div>
-
-<button class="num" v-for="number of numbers" @click="addToSum2(number)">
-{{number}}
-</button>
-        <button class="sym" v-for="operator of opps" @click="addToSum(operator)">
-            {{ operator }}
-        </button>
-        <button @click="evalSum">=</button>
-        <button @click="clearSum()">C</button>
+    <h1>Vue Calculator</h1>
+    <div id="calculator">
+        <div id="app">
+            <div id="equals">{{ sum }}</div>
+    <div id="nums">
+        <button class="num" v-for="number of numbers" @click="addToSum2(number)">
+            {{number}}
+            </button>
     </div>
+   <div id="syms">
+    <button class="sym" v-for="operator of opps" @click="addToSum(operator)">
+        {{ operator }}
+    </button>
+   </div>
+            <div>
+                <button id="eq" @click="evalSum">=</button>
+            </div>
+            <div>
+                <button id="c" @click="clearSum()">C</button>   
+            </div>
+          
+       
+        </div>
+    </div>
+ 
 
   
     <script src="/script.js"></script>

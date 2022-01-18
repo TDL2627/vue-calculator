@@ -1,11 +1,47 @@
 .num{
-    background-color: white;
-    width: 50px;
-    color: red;
+    background-color: black;
+    color: white;
+    width: 90px;
+    border-radius: 25px;
 }
 #equals{
     border: 2px solid black;
     width:500px;
     height: 50px;
     font-size: 40px;
+    overflow-x: hidden;
+    text-align: start;
+}
+body{
+    text-align: center;
+}
+#calculator{
+    border: 2px solid black;
+    width: 500px;
+    margin-left:30% ;
+}
+#nums{
+    width:300px;
+    margin-left: 100px;
+}
+.sym{
+    width: 50px;
+    margin: 5px;
+    background-color: yellow;
+    font-weight: bold;
+    border-radius: 25px;
+}
+#eq{
+    width: 150px;
+    margin: 5px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 25px;
+}
+#c{
+    width: 150px;
+    margin: 5px;
+    background-color: red;
+    font-weight: bold;
+    border-radius: 25px;
 }
