@@ -4,6 +4,9 @@
     width: 90px;
     border-radius: 25px;
 }
+*{
+    font-family: zainunesaFont;
+}
 #equals{
     border: 2px solid black;
     width:500px;
@@ -44,4 +47,8 @@ body{
     background-color: red;
     font-weight: bold;
     border-radius: 25px;
+}
+@font-face {
+    font-family: zainunesaFont;
+    src: url(/digital-7.ttf);
 }
