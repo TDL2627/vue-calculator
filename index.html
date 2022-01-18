@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
-
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
-    
+    <div id="app">
+        <div id="equals">{{ sum }}</div>
+
+<button class="num" v-for="number of numbers" @click="addToSum2(number)">
+{{number}}
+</button>
+        <button class="sym" v-for="operator of opps" @click="addToSum(operator)">
+            {{ operator }}
+        </button>
+        <button @click="evalSum">=</button>
+        <button @click="clearSum()">C</button>
+    </div>
+
+  
+    <script src="/script.js"></script>
 </body>
 </html>
